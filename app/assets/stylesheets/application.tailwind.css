@@ -16,6 +16,7 @@ body {
   height: 100vh;
   font-family: 'Poppins', sans-serif;
   letter-spacing: 1.5px;
+  overflow: hidden;
 }
 
 h1 {
@@ -29,4 +30,19 @@ section a {
 
 footer li a {
   color: white;
+}
+
+.fade-in {
+  animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

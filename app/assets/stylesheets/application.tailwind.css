@@ -1,4 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400;500;600&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(#f686a4, #ff94b0);
+  background-repeat: no-repeat;
+  height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 1.5px;
+}
+
+h1 {
+  color: white;
+}
+
+section a {
+  color: white;
+  background: linear-gradient(0.45turn , #fb7397, #ffa2bb);
+}
+
+footer li a {
+  color: white;
+}

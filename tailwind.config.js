@@ -10,7 +10,14 @@ module.exports = {
   ],
   theme:  {
     extend: {
+      fontFamily: {
+        Poppins: ["Poppins", "sans-serif"],
+        Gabarito: ["Gabarito", "cursive"],
+      },
       colors: {
+        "pink": "#ff6890",
+        "white": "#ffffff",
+        "black": "#000000",
         "luis": "#f1f1f1",
         "luis-green": {
           50: "#DFFDEE",

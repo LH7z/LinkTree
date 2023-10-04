@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400;500;600&display=swap');
 
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -28,13 +29,26 @@ section a {
   background: linear-gradient(0.45turn , #fb7397, #ffa2bb);
 }
 
-footer li a {
-  color: white;
+footer a {
+  color: transparent;
+}
+
+footer i {
+  -webkit-text-stroke-color: white;
+  -webkit-text-stroke-width: thin;
+  font-size: 45px;
 }
 
 .fade-in {
-  animation: fadeIn 1s ease-in;
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out;
+  animation-fill-mode: forwards;
 }
+
+.fade-in.one {
+  animation-delay: 150ms;
+}
+
 
 @keyframes fadeIn {
   from {
